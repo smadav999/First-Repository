@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  gap: 0 25px;
+  justify-content: center;
+  align-items: center;
+}
+.container, .containerSecond {
+  height: 20vh;
+  width: 40vw;
+  box-shadow: 0 0 15px gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(85, 85, 85);
+}
+/* Segundo Container */
+.containerSecond{
+  background-image: none;
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+}
+.containerSecond .input{
+  border: 2px solid black;
+  color: black;
+}
+.containerSecond .input::placeholder{
+  color: gray;
+}
+.input {
+  height: 45px;
+  width: 450px;
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: white;
+}
+.input::placeholder {
+  font-size: 1.1rem;
+  color: rgb(245, 245, 245);
+}
+.current {
+  position: relative;
+  z-index: 0;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  position: absolute;
+  z-index: 3;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+.closed {
+  background-image: url(/image/icon/third.svg);
+}
+.open {
+  background-image: url(/image/icon/fourth.svg);
+}
+.closed1{
+  background-image: url(/image/icon/second.svg);
+}
+.open1{
+  background-image: url(/image/icon/first.svg);
+}
